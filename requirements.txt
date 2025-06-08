@@ -1,0 +1,5 @@
+The required packages necessary for this project are as follows!
+
+openai
+flask
+apscheduler
