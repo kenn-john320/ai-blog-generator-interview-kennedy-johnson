@@ -3,14 +3,12 @@
 
 # Basic template for what I need
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 from seo_fetcher import random_metrics
 from ai_generator import generate_blog
 from scheduler import start_scheduler
 
 
 app = Flask(__name__)
-CORS(app)
 start_scheduler()
 
 @app.route('/generate', methods=["GET"])
